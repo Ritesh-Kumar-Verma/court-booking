@@ -2,7 +2,6 @@ Court Booking App
 =================
 A React application for booking court time slots with a Spring Boot backend. Users can view available time slots, enter their username and mobile number, and book slots. All bookings are stored in an H2 database on the backend.
 
-=======================================================================================================
 Features
 View available court time slots.
 
@@ -11,7 +10,7 @@ Book slots using username and mobile number.
 Booked slots are stored in the backend (H2 database).
 
 Frontend and backend deployed and accessible online.
-=======================================================================================================
+
 Tech Stack
 Frontend
 React 18
@@ -33,13 +32,13 @@ Spring Data JPA
 RESTful API
 
 Deployed on Render
-=======================================================================================================
+
 Live Links : https://ritesh-kumar-verma.github.io/court-booking/
 
 Frontend: https://ritesh-kumar-verma.github.io/court-booking/
 
 Backend: xxx (Not providing for safety reasons)
-========================================================================================================
+
 Setup Instructions
 Prerequisites
 
@@ -51,7 +50,7 @@ Maven
 
 
 React
-=======================================================================================================
+
 
 Frontend Setup
 
@@ -75,7 +74,7 @@ npm run dev
 
 Open http://localhost:5173
  in your browser.
-=======================================================================================================
+
 
 Backend Setup
 
@@ -93,7 +92,7 @@ java -jar target/court-booking-backend-0.0.1-SNAPSHOT.jar
 
 The backend runs on http://localhost:8080
  by default.
-=======================================================================================================
+
 
 Backend API
 
@@ -122,14 +121,14 @@ Body example:
 ]
 
 
-=======================================================================================================
+
 
 Database
 
 H2 Database in file mode: ~/court-booking.mv.db
 
 Accessible via H2 console in Spring Boot at /h2-console
-=======================================================================================================
+
 
 How to Use
 
@@ -144,7 +143,7 @@ Enter your username and mobile number.
 Click Book to save the booking to the backend.
 
 Booked slots are automatically marked as unavailable and will not show in frontend.
-=======================================================================================================
+
 
 Deployment
 
@@ -155,7 +154,7 @@ Backend: Deployed on Render
 Make sure CORS is allowed on the backend for your frontend domain:
 
 @CrossOrigin(origins = "https://your-frontend-link.com")
-=======================================================================================================
+
 
 Future Improvements
 
