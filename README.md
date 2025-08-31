@@ -86,12 +86,14 @@ Backend Setup
 Clone the backend repository
 
 git clone https://github.com/Ritesh-Kumar-Verma/Court-Booking-Backend
+
 cd Court-Booking-Backend
 
 
 Build and run the application
 
 ./mvnw clean package
+
 java -jar target/court-booking-backend-0.0.1-SNAPSHOT.jar
 
 
