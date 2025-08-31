@@ -3,6 +3,7 @@ Court Booking App
 A React application for booking court time slots with a Spring Boot backend. Users can view available time slots, enter their username and mobile number, and book slots. All bookings are stored in an H2 database on the backend.
 
 Features
+=================
 View available court time slots.
 
 Book slots using username and mobile number.
@@ -10,9 +11,11 @@ Book slots using username and mobile number.
 Booked slots are stored in the backend (H2 database).
 
 Frontend and backend deployed and accessible online.
-
+=================
 Tech Stack
+=================
 Frontend
+=================
 React 18
 
 Vite
@@ -20,6 +23,7 @@ Vite
 Tailwind CSS (or your preferred styling)
 
 Backend
+=================
 
 Spring Boot
 
@@ -30,9 +34,9 @@ H2 Database (file mode for persistence)
 Spring Data JPA
 
 RESTful API
-
+=================
 Deployed on Render
-
+=================
 Live Links : https://ritesh-kumar-verma.github.io/court-booking/
 
 Frontend: https://ritesh-kumar-verma.github.io/court-booking/
@@ -48,12 +52,12 @@ Java 17+
 
 Maven
 
-
+=================
 React
-
+=================
 
 Frontend Setup
-
+=================
 Clone the repository
 
 git clone https://github.com/Ritesh-Kumar-Verma/court-booking
@@ -77,7 +81,7 @@ Open http://localhost:5173
 
 
 Backend Setup
-
+=================
 Clone the backend repository
 
 git clone https://github.com/Ritesh-Kumar-Verma/Court-Booking-Backend
@@ -93,9 +97,9 @@ java -jar target/court-booking-backend-0.0.1-SNAPSHOT.jar
 The backend runs on http://localhost:8080
  by default.
 
-
+=================
 Backend API
-
+=================
 
 POST /api/getavailability– get available time slot by date
 
@@ -122,16 +126,16 @@ Body example:
 
 
 
-
+=================
 Database
-
+=================
 H2 Database in file mode: ~/court-booking.mv.db
 
 Accessible via H2 console in Spring Boot at /h2-console
 
-
+=================
 How to Use
-
+=================
 Open the frontend in your browser.
 
 Select a Date and press check Availability
@@ -144,9 +148,9 @@ Click Book to save the booking to the backend.
 
 Booked slots are automatically marked as unavailable and will not show in frontend.
 
-
+=================
 Deployment
-
+=================
 Frontend: Deployed via GitHub pages
 
 Backend: Deployed on Render 
@@ -155,9 +159,9 @@ Make sure CORS is allowed on the backend for your frontend domain:
 
 @CrossOrigin(origins = "https://your-frontend-link.com")
 
-
+=================
 Future Improvements
-
+=================
 User authentication & login system.
 
 Email/SMS notifications on successful booking.
