@@ -4,18 +4,20 @@ import ViewBookings from './Component/ViewBookings';
 
 const App = () => {
   
-  const [bookedSlots, setBookedSlots] = useState([]);
+  const [availableSlots, setAvailableSlots] = useState([]);
   const [selectedSlot, setSelectedSlot] = useState([]);
+    const [warning, setWarning] = useState("");
 
-   const [userInfo, setUserInfo] = useState({
-      username: "Guest",
-      mob: "0000000000",
-    });
+ const [userInfo, setUserInfo] = useState({
+        userName: "",
+        mob: "",
+      });
+   
     
   const [tab , setTab] = useState("Home")
   const tabs = {
-    "Home" :  <BookingPage bookedSlots={bookedSlots} setBookedSlots={setBookedSlots} selectedSlot={selectedSlot} setSelectedSlot={setSelectedSlot} setTab={setTab} />,
-    "View Bookings" : <ViewBookings/>
+    "Home" :  <BookingPage userInfo={userInfo} setUserInfo={setUserInfo} availableSlots={availableSlots} setAvailableSlots={setAvailableSlots} warning={warning} setWarning={setWarning}  selectedSlot={selectedSlot} setSelectedSlot={setSelectedSlot} setTab={setTab} />,
+    "View Bookings" : <ViewBookings userInfo={userInfo} setUserInfo={setUserInfo} warning={warning} setWarning={setWarning} />
   }
 
   return (
@@ -34,7 +36,6 @@ const App = () => {
 
         }
 
-        <div className="text-right pr-3">Username : {userInfo.username}</div>
       </div>
       {
         tabs[tab]
