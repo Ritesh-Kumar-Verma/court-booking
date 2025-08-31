@@ -102,11 +102,11 @@ The backend runs on http://localhost:8080
 Backend API
 =================
 
-POST /api/getavailability– get available time slot by date
+POST /getavailability– get available time slot by date
 
-POST /api/addbookings– Create a booking with mobile number and name
+POST /addbookings– Create a booking with mobile number and name
 
-POST /api/getbookings– get bookings with mobile number
+POST /getbookings– get bookings with mobile number
 
 
 Body example:
